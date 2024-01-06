@@ -30,7 +30,7 @@ class Bandit:
     def reset_regret(self) -> None:
         self.regret = 0.0
 
-    # pull the kth lever 0 to n-1
+    # pull the kth lever; 0 to n-1
     def choose(self,k:int) -> int:
         assert 0 <= k < self.N
         # returns 1 with probability = self.probs[k]
